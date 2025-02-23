@@ -50,6 +50,7 @@ const App: React.FC = () => {
   useEffect(() => {
     fetchImages();
   }, [fetchImages]);
+  
 
   const resetSearch = () => {
     setPage(1);
