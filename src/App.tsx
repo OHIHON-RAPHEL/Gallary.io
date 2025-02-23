@@ -3,7 +3,7 @@ import { useCallback, useRef, useState, useEffect } from 'react';
 import { Form, Modal, Button } from 'react-bootstrap';
 
 const API_URL = 'https://api.unsplash.com/search/photos';
-const IMAGE_PER_PAGE = 20;
+const IMAGE_PER_PAGE = 10;
 
 interface ImageData {
   id: string;
@@ -50,7 +50,7 @@ const App: React.FC = () => {
   useEffect(() => {
     fetchImages();
   }, [fetchImages]);
-  
+
 
   const resetSearch = () => {
     setPage(1);
