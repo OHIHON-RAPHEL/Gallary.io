@@ -23,6 +23,7 @@ const App: React.FC = () => {
   const [hasSearched, setHasSearched] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
   const [showModal, setShowModal] = useState<boolean>(false);
+
   
 
   const fetchImages = useCallback(async (): Promise<void> => {
