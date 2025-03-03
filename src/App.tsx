@@ -25,7 +25,6 @@ const App: React.FC = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   
-
   const fetchImages = useCallback(async (): Promise<void> => {
     try {
       if (!searchInput.current) return;
