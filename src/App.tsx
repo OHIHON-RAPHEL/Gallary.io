@@ -64,6 +64,7 @@ const App: React.FC = () => {
       resetSearch();
     }
   };
+  
 
   const handleSelection = (selection: string) => {
     if (searchInput.current) {
