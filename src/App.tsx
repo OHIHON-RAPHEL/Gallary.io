@@ -13,6 +13,7 @@ interface ImageData {
   tags?: { title: string }[];
 }
 
+
 const App: React.FC = () => {
   const searchInput = useRef<HTMLInputElement | null>(null);
   const [images, setImages] = useState<ImageData[]>([]);
